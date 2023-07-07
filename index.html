@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aproximating Pi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>APROXIMATING PI WITH DOTS!</h1>
+    <div class="container">
+        <canvas id="canvas" height="600" width="600"></canvas>
+        <div class="contentDiv">
+            <p>True pi value:</p>
+            <p id="truePi" class="piExhib"></p>
+            <p>Current Approximation: </p>
+            <p id="currentAp" class="piExhib"></p>
+            <p style="text-align: center; width: 300px">Value comparison:</p>
+            <p class="piExhib" id="piDiff"></p>
+            <input id="startBtn" type="submit" name="button" value="START">
+        </div>
+    </div>
+    <div class="container explanationContainer">
+        <h2 class="titles">LOGIC EXPLANATION:</h2>
+        <div class="contentDiv">
+            <p>This program has the idea of rounding the value of pi, through the circle's and square's areas. For this to be possible, some predefitions are needed:</p>
+            <ol id="explanation-topics">
+                <li>The circle's radius must be half of the square's side;</li>
+                <li>The circle's center must be set in the square's center.</li>
+            </ol>
+            <p>Having those topics out of the way, we can carry on to the calculations:</p>
+            <img src="./calculations.png" alt="Calculations" width="392" height="220">
+            <p>Finally, since both circle's and square's areas are approximated by the ammount the dots printed in the canvas, we can already compute pi! To do so, we divide the circle's area by the square's areas and multiply this result by 4, obtaining PI!!!</p>
+        </div>
+    </div>
+</body>
+</html>

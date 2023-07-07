@@ -1,0 +1,94 @@
+:root {
+    --purple:   #742CF6;
+    --pink:     #D4269D;
+    --black:    #191919;
+    --white:    #E7ECEE;
+    --yellow:   #EBE836;
+    --blue:     #1E8ED4;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.explanationContainer {
+    padding: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--purple);
+}
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+body {
+    color: var(--white);
+    background: var(--black);
+    font-family: arial;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+p {
+    font-size: 1.4rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: justify;
+    padding: 1em;
+    margin: 0;
+}
+.titles {
+    display: flex;
+    align-items: center;
+}
+#explanation-topics {
+    font-size: 1.4rem;
+    padding-left: 2em;
+}
+canvas {
+    border: 5px solid var(--white);
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#startBtn {
+    border-radius: none;
+    border: none;
+    color: var(--white);
+    background: var(--purple);
+    width: 300px;
+    height: 90px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 10px;
+}
+#startBtn:hover {
+    cursor: pointer;
+    background: var(--pink);
+}
+.piExhib {
+    font-size: 1.7rem;
+    width: 300px;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    border: 5px solid var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
